@@ -1,0 +1,24 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+@import 'global/normalize.scss';
+@import 'global/common-styles.scss';
+@import 'global/fonts.scss';
+
+@import 'blocks/wrapper-global.scss';
+@import 'blocks/btn.scss';
+
+@import 'blocks/page-header.scss';
+@import 'blocks/main-nav.scss';
+
+@import 'blocks/features.scss';
+
+@import 'blocks/page-footer.scss';
+
+/*
+@import 'blocks/intro.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/socials.scss';
+@import 'blocks/overlay';
+@import 'blocks/modal-windows.scss';
+*/

@@ -1,0 +1,5 @@
+//Interpolation use ex.: @media #{$retina}
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+$desktop: "only screen and (min-width: 1200px)";
+$tablet: "only screen and (min-width: 768px)";
+$mobile: "only screen and (min-width: 320px)";

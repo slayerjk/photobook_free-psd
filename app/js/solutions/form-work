@@ -1,0 +1,54 @@
+/*Main-nav mobile-menu toggle*/
+
+  /*---Functions to change nav-menu styles(logo-section mostly)---*/
+  function navMenuMobile() {
+    $('.main-nav__logo').addClass('main-nav__logo--js-mobile');
+    $('.main-nav__menu-toggle').show();
+    $('.main-nav__list').hide();
+  }
+
+  function navMenuWide() {
+    $('.main-nav__logo').removeClass('main-nav__logo--js-mobile');
+    $('.main-nav__menu-toggle').hide();
+    $('.main-nav__list').show();
+  }
+
+  /*---Function to change nav-menu styles depending viewport---*/
+  function navMenuState() {
+    var $winsize = $(window).width();
+    if ($winsize <= 768) {
+      navMenuMobile();
+    } else if ($winsize > 768) {
+      navMenuWide();
+    }
+  }
+
+  /*---Toggle-nav-menu btn(burger) behaviour on click---*/
+  $('.main-nav__menu-toggle').on('click', function (event) {
+    event.preventDefault(event);
+    $('.main-nav__list').slideToggle('slow');
+
+    if ($('.main-nav__menu-toggle').hasClass('main-nav__menu-toggle--active')) {
+      $('.main-nav__menu-toggle').removeClass('main-nav__menu-toggle--active');
+      setTimeout(function () {
+        $('.main-nav__logo').addClass('main-nav__logo--js-mobile');
+      }, 470);
+    } else {
+      $('.main-nav__menu-toggle').addClass('main-nav__menu-toggle--active');
+      $('.main-nav__logo').removeClass('main-nav__logo--js-mobile');
+    }
+  });
+
+  /*---Nav-menu view(mobile or widescreen function on window resizing---*/
+  $(window).on('resize', function () {
+    var $winsize = $(window).width();
+    $('.main-nav__menu-toggle').removeClass('main-nav__menu-toggle--active');
+    if ($winsize <= 768) {
+      navMenuMobile();
+    } else if ($winsize > 768) {
+      navMenuWide();
+    }
+  });
+
+  /*---Calling Function to change nav-menu styles depending viewport---*/
+  navMenuState();
