@@ -38,8 +38,10 @@ ul {
 
 .container {
   width: 100%;
-  /*max-width: ;*/
-  margin: 0 auto; }
+  max-width: 1079px;
+  margin: 0 auto; 
+	outline: 1px solid red;
+}
 
 /*
 *::-webkit-input-placeholder,

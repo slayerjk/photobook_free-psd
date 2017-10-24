@@ -1,10 +1,45 @@
-/*
+
 @font-face {
-  font-family: "Open Sans";
+  font-family: "PFAgora Sans Pro Regular";
   src:
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+    url("../fonts/pfagorasanspro-reg.woff2") format("woff2"),
+    url("../fonts/pfagorasanspro-reg.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
-*/
+
+@font-face {
+  font-family: "PFAgora Sans Pro Bold";
+  src:
+    url("../fonts/pfagorasanspro-bold.woff2") format("woff2"),
+    url("../fonts/pfagorasanspro-bold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PFAgora Sans Pro Light";
+  src:
+    url("../fonts/pfagorasanspro-light.woff2") format("woff2"),
+    url("../fonts/pfagorasanspro-light.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PFAgora Sans Pro Thin";
+  src:
+    url("../fonts/pfagorasanspro-thin.woff2") format("woff2"),
+    url("../fonts/pfagorasanspro-thin.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PFAgora Sans Pro XThin";
+  src:
+    url("../fonts/pfagorasanspro-xthin.woff2") format("woff2"),
+    url("../fonts/pfagorasanspro-xthin.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
