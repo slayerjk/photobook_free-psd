@@ -46,7 +46,7 @@ var paths = {
 //browserSync options//////////////////////////////////////////////////////////
 gulp.task('browserSync', function () {
   browserSync({
-    proxy: 'localhost/photobook_free-psd/app/index.html' //current site name(domain in OS, ex.)
+    proxy: 'photobook/app' //current site name(domain in OS, ex.)
   });
 });
 
@@ -55,7 +55,7 @@ gulp.task('php-server', function () {
     connectPHP.server({
         base: './',
         keepalive: true,
-        hostname: 'localhost/photobook_free-psd/app/index.html', //current site name(domain in OS, ex.)
+        hostname: '/', //current site name(domain in OS, ex.)
         open: false,
         notify: false,
         ui: false //turn off browserSync ui page
