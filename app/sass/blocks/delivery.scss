@@ -1,0 +1,12 @@
+.delivery__item-title {
+  font: 3.6em $font-agora-light;
+  color: #000;
+}
+
+.delivery__item-desc {
+  font: 1.8em $font-agora-reg;
+  color: #000;
+  &--alert {
+    color: #e11a27;
+  }
+}

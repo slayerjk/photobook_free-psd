@@ -1,4 +1,8 @@
-.test {
-	font-size: 4em;
-	font-family: $font-agora-xthin;
+.main-nav__toggle-btn {
+  cursor: pointer;
+}
+
+.main-nav__link {
+  font: 2.4em $font-agora-light;
+  color: #000;
 }
